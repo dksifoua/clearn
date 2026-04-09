@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define LOWER   0
-#define STEP    20
-#define UPPER   300
+#define LOWER 0
+#define STEP 20
+#define UPPER 300
 
 int main() {
   float fahrenheit = LOWER, celsius;

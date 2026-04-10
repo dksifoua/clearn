@@ -1,2 +1,2 @@
 %:
-	cc exercises/$@.c && ./a.out && rm a.out
+	@cc exercises/$@.c && ./a.out && rm a.out

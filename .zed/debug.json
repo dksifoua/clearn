@@ -1,0 +1,10 @@
+[
+    {
+        "adapter": "CodeLLDB",
+        "label": "Debug C program",
+        "request": "launch",
+        "program": "${ZED_WORKTREE_ROOT}/a.out",
+        "args": [],
+        "cwd": "${ZED_WORKTREE_ROOT}"
+    }
+]

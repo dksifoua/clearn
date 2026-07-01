@@ -2,4 +2,4 @@ clean:
 	@rm -rf *.out
 
 %:
-	@gcc -Wall -Werror -Wpedantic solutions/$@.c && ./a.out && rm a.out
+	@gcc -std=c23 -Wall -Werror -Wpedantic solutions/$@.c && ./a.out && rm a.out

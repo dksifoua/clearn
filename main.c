@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-int square(int n) {
-    // Return n * n.
-    return n * n;
+void swap(int* a, int* b) {
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
 }
 
 int main(void) {
-    int n;
-    scanf("%d", &n);
-    printf("%d\n", square(n));
+    int a, b;
+    scanf("%d %d", &a, &b);
+    swap(&a, &b);
+    printf("%d %d\n", a, b);
     return 0;
 }

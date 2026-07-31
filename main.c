@@ -1,10 +1,18 @@
 #include <stdio.h>
 
 int main(void) {
-    int w, h, n;
-    if ((n = scanf("%d %d", &w, &h)) != 2) {
-        return -1;
+    int numbers[5];
+    for (int i = 0; i < 5; ++i) {
+        scanf("%d", &numbers[i]);
     }
-    printf("%d\n", w * h);
+
+    int largest = 1 << (sizeof((int) 0) * 8 - 1);
+    for (int i = 0; i < 5; ++i) {
+        if (largest < numbers[i]) {
+            largest = numbers[i];
+        }
+    }
+
+    printf("%d\n", largest);
     return 0;
 }

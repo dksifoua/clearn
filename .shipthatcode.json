@@ -1,0 +1,62 @@
+{
+  "course": "c-fundamentals",
+  "language": "c",
+  "language_id": 50,
+  "entrypoint": "main.c",
+  "version": 1,
+  "content_hash": "5d6c26b26364cfee",
+  "lessons": [
+    {
+      "slug": "hello-world",
+      "tests_hash": "7e1d82d1ca8a"
+    },
+    {
+      "slug": "variables-and-types",
+      "tests_hash": "4ccc141f8a2f"
+    },
+    {
+      "slug": "numbers-and-printf",
+      "tests_hash": "69adc0cc5957"
+    },
+    {
+      "slug": "arrays",
+      "tests_hash": "2016758b8560"
+    },
+    {
+      "slug": "strings",
+      "tests_hash": "9def5825ee09"
+    },
+    {
+      "slug": "conditionals",
+      "tests_hash": "1720a777f726"
+    },
+    {
+      "slug": "loops",
+      "tests_hash": "d936b3338ca8"
+    },
+    {
+      "slug": "functions",
+      "tests_hash": "4e6757737a4d"
+    },
+    {
+      "slug": "pointers-basics",
+      "tests_hash": "61eeb0498b2a"
+    },
+    {
+      "slug": "structs",
+      "tests_hash": "c720ce1dc898"
+    },
+    {
+      "slug": "malloc-and-free",
+      "tests_hash": "5525bb049b0e"
+    },
+    {
+      "slug": "file-io",
+      "tests_hash": "0d124ffc38d3"
+    },
+    {
+      "slug": "preprocessor",
+      "tests_hash": "9098c5fa250c"
+    }
+  ]
+}

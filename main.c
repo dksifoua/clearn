@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-    int a, b;
-    int n = scanf("%d %d", &a, &b);
-    if (n != 2) {
-        printf("Error while reading from stdin.\n");
-        return 1;
+    int w, h, n;
+    if ((n = scanf("%d %d", &w, &h)) != 2) {
+        return -1;
     }
-
-    printf("%d\n", a + b);
+    printf("%d\n", w * h);
     return 0;
 }

@@ -1,18 +1,16 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void) {
-    int numbers[5];
-    for (int i = 0; i < 5; ++i) {
-        scanf("%d", &numbers[i]);
-    }
-
-    int largest = 1 << (sizeof((int) 0) * 8 - 1);
-    for (int i = 0; i < 5; ++i) {
-        if (largest < numbers[i]) {
-            largest = numbers[i];
+    char buf[100];
+    while (fgets(buf, sizeof(buf), stdin) != NULL) {
+        for (int i = 0; buf[i] != '\0'; ++i) {
+            if (buf[i] == '\n') {
+                buf[i] = '\0';
+            }
         }
+        printf("%zu\n", strlen(buf));
+        break;
     }
-
-    printf("%d\n", largest);
     return 0;
 }

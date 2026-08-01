@@ -3,19 +3,35 @@
 
 int main(void) {
     int n;
-    scanf("%d", &n);
+    if (scanf("%d", &n) != 1) {
+        return -1;
+    }
+    getchar();
 
-    int *arr = malloc(n * sizeof(int));
-    for (int i = 0; i < n; ++i) {
-        scanf("%d", arr + i);
+    FILE *out = fopen("/tmp/clines.txt", "w");
+    if (out == NULL) {
+        return -1;
+    }
+    
+    char buf[1024];
+    for (int i = 0; i < n; i++) {
+        if (fgets(buf, sizeof(buf), stdin) != NULL) {
+            fprintf(out, "%s", buf);
+        }
+    }
+    fclose(out);
+
+    FILE *in = fopen("/tmp/clines.txt", "r");
+    if (in == NULL) {
+        return -1;
     }
 
-    int sum = 0;
-    for (int i = 0; i < n; ++i) {
-        sum += arr[i];
+    int nlines = 0;
+    while (fgets(buf, sizeof(buf), in) != NULL) {
+        nlines += 1;
     }
+    fclose(in);
 
-    printf("%d\n", sum);
-    free(arr);
+    printf("lines: %d\n", nlines);
     return 0;
 }

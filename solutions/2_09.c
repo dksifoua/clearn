@@ -8,7 +8,6 @@
 #include <stdio.h>
 
 int bitcount(unsigned x);
-int tobinary(unsigned x);
 
 int main(void) {
     unsigned x = 12;
@@ -22,17 +21,4 @@ int bitcount(unsigned x) {
         ++nbits;
     }
     return nbits;
-}
-
-int tobinary(unsigned x) {
-    // x = 7
-    // 7 % 2 = 1 | 7 / 2 = 3 | x100
-    // 3 % 2 = 1 | 3 / 2 = 1 | x10
-    // 1 % 2 = 1 | 1 / 2 = 0 | x1
-    int res = 0;
-    while (x > 0) {
-        res = res * 1e()
-        x /= 2;
-    }
-    return res;
 }
